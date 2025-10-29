@@ -1,0 +1,235 @@
+/* ====== BASE ====== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color, #fffaf5);
+  color: var(--text-color, #333);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+header {
+  background-color: var(--header-bg, #ff914d);
+  color: var(--header-text, #fff);
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: var(--header-text, #fff);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: var(--primary-color, #ff914d);
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+section {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+form {
+  background-color: var(--form-bg, #fff3e0);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+  transition: background-color 0.4s ease;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--text-color, #333);
+}
+
+input, select, button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+button {
+  background-color: var(--primary-color, #ff914d);
+  color: white;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: var(--accent-color, #ff7f00);
+  transform: scale(1.05);
+}
+
+section ul {
+  list-style: none !important;
+  margin: 0;
+  padding-left: 0;
+  text-align: center;
+}
+
+section ul li {
+  list-style: none !important;
+  margin: 4px 0;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--footer-bg, #ff914d);
+  color: var(--footer-text, #fff);
+  padding: 15px 0;
+  margin-top: 50px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* ====== TEMAS ====== */
+:root {
+  --bg-color: #fffaf5;
+  --text-color: #333;
+  --link-color: #ff914d;
+  --primary-color: #ff914d;
+  --accent-color: #ff7f00;
+  --form-bg: #fff3e0;
+  --header-bg: #ff914d;
+  --header-text: #fff;
+  --footer-bg: #ff914d;
+  --footer-text: #fff;
+}
+
+/* 🌙 MODO ESCURO */
+body.dark-mode {
+  --bg-color: #1b1b1b;
+  --text-color: #e0e0e0;
+  --link-color: #ffb74d;
+  --primary-color: #ffb74d;
+  --accent-color: #ff9800;
+  --form-bg: #2a2a2a;
+  --header-bg: #2b2b2b;
+  --header-text: #ffb74d;
+  --footer-bg: #2b2b2b;
+  --footer-text: #ffb74d;
+}
+
+/* ⚫ ALTO CONTRASTE */
+body.high-contrast {
+  --bg-color: #000;
+  --text-color: #fff;
+  --link-color: #ffff00;
+  --primary-color: #ffff00;
+  --accent-color: #ffa500;
+  --form-bg: #000;
+  --header-bg: #000;
+  --header-text: #ffff00;
+  --footer-bg: #000;
+  --footer-text: #ffff00;
+}
+
+/* ====== ACESSIBILIDADE ====== */
+.acessibilidade {
+  margin-top: 10px;
+}
+
+.acessibilidade button {
+  margin: 5px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.acessibilidade button:hover {
+  background-color: #555;
+}
+
+.acessibilidade button.active {
+  background-color: var(--primary-color);
+  color: #000;
+  font-weight: bold;
+  box-shadow: 0 0 6px var(--accent-color);
+}
+
+/* ====== SKIP LINK ====== */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* ====== RESPONSIVO ====== */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  form {
+    width: 90%;
+  }
+}
