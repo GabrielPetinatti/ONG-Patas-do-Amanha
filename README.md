@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.freepik.com/free-vector/flat-design-adopt-pet-illustration_23-2148512050.jpg" alt="ONG Patas do Amanhã Banner" width="600"/>
+  <img src="https://img.freepik.com/free-vector/hand-holding-dog-paw-concept-illustration_114360-12709.jpg" alt="Mão segurando pata - ONG Patas do Amanhã" width="600"/>
 </p>
 
 # 🐾 ONG Patas do Amanhã
@@ -72,4 +72,5 @@ Com o apoio de voluntários e doações, a instituição trabalha diariamente pa
 <p align="center">
   <sub>Feito com ❤️ e dedicação por <a href="https://www.linkedin.com/in/gabriel-petinatti-teixeira-costa-b9a327238/">Gabriel Petinatti</a></sub>
 </p>
+
 
